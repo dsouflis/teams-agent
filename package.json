@@ -1,0 +1,27 @@
+{
+  "name": "teams-agent",
+  "version": "1.0.0",
+  "description": "An agent that maintains the state of a chat in constant size using an LLM",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsx --env-file=.env  src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dimitrios Souflis",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3",
+    "mocha": "^7.1.1",
+    "chai": "^4.2.0",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "openai": "^4.25.0",
+    "llama3-tokenizer-js": "^1.2.0"
+  },
+  "devDependencies": {
+  "tsx": "^4.19.0"
+}
+}
